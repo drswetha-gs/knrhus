@@ -1,14 +1,14 @@
 const data = [
   {
-    question: "Discuss the management of carcinoma stomach.",
-    pdf: "https://raw.githubusercontent.com/drswetha-gs/knrhus/b87feb74396e8f053a04c7e847fd32554f403a2c/Book%2021%20Mar%202025.pdf"
-  },
-  {
-    question: "Enumerate causes and management of obstructive jaundice.",
+    question: "Rectal Prolapse.",
     pdf: ""
   },
   {
-    question: "Describe the clinical features and management of thyroid nodules.",
+    question: "Operative surgery for WHIPPLE procedure",
+    pdf: ""
+  },
+  {
+    question: "HIATUS Hernia.",
     pdf: ""
   }
 ];
