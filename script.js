@@ -2,12 +2,7 @@ const data = [
   {
     date: "2026-03-17",
     question: "What is Artificial Intelligence?",
-    pdf: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/pdfs/ai.pdf"
-  },
-  {
-    date: "2026-03-19",
-    question: "What is Machine Learning?",
-    pdf: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/pdfs/ml.pdf"
+    pdf:"https://github.com/drswetha-gs/knrhus/blob/b87feb74396e8f053a04c7e847fd32554f403a2c/Book%2021%20Mar%202025.pdf"
   }
 ];
 
