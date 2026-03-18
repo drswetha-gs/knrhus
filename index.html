@@ -2,26 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Daily Q&A</title>
+  <title>Surgery Daily Dose</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h1>📅 Daily Question</h1>
 
-    <div class="card">
-      <h2>Today's Question</h2>
-      <p id="question">Loading...</p>
+    <!-- Header -->
+    <div class="header">
+      <h1>🩺 Surgery Daily Dose</h1>
+      <p class="tagline">Preparation for General Surgery PG Final Year KNRHUS Exam</p>
+
+      <div class="author">
+        <p><strong>Author:</strong> Dr. Swetha Visakan</p>
+        <p> MS General Surgery </p>
+        <p>Senior Resident, Gandhi Hospital</p>
+        <p>Email: 
+          <a href="mailto:swethavisakan14@gmail.com">
+            swethavisakan14@gmail.com
+          </a>
+        </p>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Yesterday's Answer</h2>
-      <input type="email" id="email" placeholder="Enter your Gmail">
-      <br><br>
-      <button onclick="verifyAndOpen()">Show Answer</button>
-      <p id="message"></p>
+    <!-- Motivation Banner -->
+    <div class="banner">
+      💡 Consistency beats intensity
     </div>
+
+    <!-- Questions -->
+    <h2 class="section-title">📚 Practice Questions</h2>
+    <div id="qa-container"></div>
+
   </div>
 
   <script src="script.js"></script>

@@ -1,46 +1,41 @@
 const data = [
   {
-    date: "2026-03-17",
-    question: "What is Artificial Intelligence?",
-    pdf:"https://github.com/drswetha-gs/knrhus/blob/b87feb74396e8f053a04c7e847fd32554f403a2c/Book%2021%20Mar%202025.pdf"
+    question: "Discuss the management of carcinoma stomach.",
+    pdf: "https://raw.githubusercontent.com/drswetha-gs/knrhus/b87feb74396e8f053a04c7e847fd32554f403a2c/Book%2021%20Mar%202025.pdf"
+  },
+  {
+    question: "Enumerate causes and management of obstructive jaundice.",
+    pdf: ""
+  },
+  {
+    question: "Describe the clinical features and management of thyroid nodules.",
+    pdf: ""
   }
 ];
 
-// 📅 Get dates
-const today = new Date().toISOString().split("T")[0];
-const yesterday = new Date(Date.now() - 86400000)
-  .toISOString()
-  .split("T")[0];
+const container = document.getElementById("qa-container");
 
-const todayItem = data.find(d => d.date === today);
-const yesterdayItem = data.find(d => d.date === yesterday);
+data.forEach((item, index) => {
+  const card = document.createElement("div");
+  card.className = "card";
 
-// Show question
-document.getElementById("question").innerText =
-  todayItem ? todayItem.question : "No question today";
+  let content = `
+    <h3>📝 Question ${index + 1}</h3>
+    <p>${item.question}</p>
+    <span class="badge">Final Year Prep</span>
+  `;
 
-// 📧 Validate Gmail
-function isValidGmail(email) {
-  return /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(email);
-}
-
-// 🔓 Verify + Open PDF
-function verifyAndOpen() {
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message");
-
-  if (!isValidGmail(email)) {
-    message.innerText = "❌ Please enter a valid Gmail address";
-    return;
+  if (item.pdf && item.pdf.trim() !== "") {
+    content += `
+      <br>
+      <a href="${item.pdf}" target="_blank" download>
+        📥 Download Answer
+      </a>
+    `;
+  } else {
+    content += `<p>⏳ Yet to update</p>`;
   }
 
-  if (!yesterdayItem) {
-    message.innerText = "Answer not available yet";
-    return;
-  }
-
-  message.innerText = "✅ Access granted! Opening PDF...";
-
-  // Open GitHub PDF
-  window.open(yesterdayItem.pdf, "_blank");
-}
+  card.innerHTML = content;
+  container.appendChild(card);
+});
