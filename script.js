@@ -5,7 +5,7 @@ let data = [];
 if (page.includes("pyq")) {
   data = [
     { question: "Rectal Prolapse", pdf: "" },
-    { question: "Whipple Procedure", pdf: "" }
+    { question: "Whipple Procedure", pdf: "https://raw.githubusercontent.com/drswetha-gs/knrhus/main/whipple_procedure.pdf" }
   ];
 }
 
