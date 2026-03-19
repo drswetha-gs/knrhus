@@ -92,3 +92,32 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+/* Sections Layout */
+.sections {
+  display: flex;
+  flex-direction: column;   /* Forces new line */
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Section Cards */
+.section-card {
+  display: block;           /* Full width */
+  width: 100%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.section-card:hover {
+  background: #eaf2f8;
+  transform: translateY(-2px);
+}
