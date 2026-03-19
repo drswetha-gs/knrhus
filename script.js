@@ -1,10 +1,10 @@
 const data = [
   {
     question: "Rectal Prolapse.",
-    pdf: ""
+    pdf: "https://raw.githubusercontent.com/drswetha-gs/knrhus/b87feb74396e8f053a04c7e847fd32554f403a2c/Book%2021%20Mar%202025.pdf"
   },
   {
-    question: "Operative surgery for WHIPPLE procedure",
+    question: "Operative surgery for WHIPPLE procedure.",
     pdf: ""
   },
   {
@@ -22,7 +22,6 @@ data.forEach((item, index) => {
   let content = `
     <h3>📝 Question ${index + 1}</h3>
     <p>${item.question}</p>
-    <span class="badge">Final Year Prep</span>
   `;
 
   if (item.pdf && item.pdf.trim() !== "") {
