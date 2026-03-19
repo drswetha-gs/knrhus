@@ -1,7 +1,7 @@
 const data = [
   {
     question: "Rectal Prolapse.",
-    pdf: "https://raw.githubusercontent.com/drswetha-gs/knrhus/b87feb74396e8f053a04c7e847fd32554f403a2c/Book%2021%20Mar%202025.pdf"
+    pdf: ""
   },
   {
     question: "Operative surgery for WHIPPLE procedure.",

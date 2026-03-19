@@ -1,7 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
+
+  background: 
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+    url("https://carrington.edu/wp-content/uploads/2024/05/The-Evolution-of-Surgical-Sutures.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   display: flex;
   justify-content: center;
 }
